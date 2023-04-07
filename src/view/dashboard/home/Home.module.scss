@@ -1,0 +1,11 @@
+.home_page{
+    .inner_home_page{
+        display: flex;
+        // justify-content: space-between;
+        max-width: 1240px;
+        margin: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        position: relative;
+    }
+}

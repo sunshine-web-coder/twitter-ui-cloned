@@ -1,0 +1,98 @@
+.feedPost {
+  border-top: 1px solid transparent;
+  border: 1px solid rgb(240, 240, 240);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 5px;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .right {
+      //   border: 1px solid red;
+      // margin-top: 5px;
+      width: 100%;
+
+      .top {
+        margin-bottom: 2px;
+        width: 100%;
+
+        .fphds76 {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          span {
+            a {
+              color: #536471;
+            }
+            font-size: 15px;
+            color: #536471;
+
+            &:nth-child(1) {
+              a {
+                color: #1a2129;
+                font-weight: bold;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            &:nth-child(3) {
+              position: relative;
+              top: -3px;
+            }
+          }
+        }
+        // .fphds39 {
+        //   div {
+        //     min-width: 36px;
+        //     min-height: 36px;
+        //     border-radius: 100%;
+        //     background-color: #ffffff;
+        //     cursor: pointer;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+
+        //     .r_feed_icon {
+        //       width: 20px;
+        //       height: 20px;
+        //       fill: #536471;
+        //     }
+
+        //     &:hover {
+        //       background-color: #1d9cf023;
+        //       border: none;
+        //       outline: none;
+        //     }
+        //     &:hover > .r_feed_icon {
+        //       fill: rgb(29, 155, 240);
+        //     }
+        //   }
+        // }
+      }
+      .tweetText {
+        // border: 1px solid red;
+        span {
+          line-height: 20px;
+          font-size: 15px;
+          font-weight: 400;
+        }
+      }
+      .image_video_w82 {
+        border: 1px solid rgb(207, 217, 222);
+        margin-top: 12px;
+        border-radius: 16px;
+        overflow: hidden;
+        cursor: pointer;
+        max-width: 500px;
+        max-height: 100%;
+      }
+      .bottom {
+        max-width: 425px;
+      }
+    }
+  }
+}

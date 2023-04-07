@@ -1,0 +1,92 @@
+.search_Bar {
+  margin-bottom: 12px;
+  margin-top: 5px;
+  position: sticky;
+  top: 6px;
+  width: 100%;
+  .inner_Search_Bar {
+    position: relative;
+    overflow: hidden;
+    // padding-right: 70px;
+    button {
+      border-radius: 0;
+      outline: none;
+      border: none;
+      width: 50px;
+      background-color: transparent;
+      position: absolute;
+      border-bottom-left-radius: 9999px;
+      border-top-left-radius: 9999px;
+
+      * {
+        font-size: 20px;
+        color: rgb(83, 100, 113);
+      }
+    }
+    input {
+      border-bottom-left-radius: 9999px;
+      border-bottom-right-radius: 9999px;
+      border-top-left-radius: 9999px;
+      border-top-right-radius: 9999px;
+      min-width: 100%;
+      padding: 12px;
+      padding-left: 55px;
+      background-color: #eff3f4;
+      color: rgb(15, 20, 25);
+      line-height: 12px;
+      font-weight: 400;
+      font-size: 15px;
+      outline: none;
+      border: none;
+
+      &::placeholder {
+        color: rgb(15, 20, 25);
+        font-weight: 500;
+      }
+    }
+
+    &:focus-within {
+      border: 1px solid #1d9bf0;
+      border-bottom-left-radius: 9999px;
+      border-bottom-right-radius: 9999px;
+      border-top-left-radius: 9999px;
+      border-top-right-radius: 9999px;
+      background-color: #eff3f4;
+      button {
+        * {
+          color: #1d9bf0;
+        }
+      }
+    }
+  }
+  .dropdown {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    box-shadow: 0px 0px 13px -3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 13px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 13px -3px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    .dropdown_row {
+      cursor: pointer;
+      padding-bottom: 12px;
+      padding-top: 12px;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 15px;
+      line-height: 48px;
+      color: #0f1419;
+      font-weight: 500;
+
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.05);
+      }
+    }
+  }
+  &:focus-within {
+    .dropdown {
+      visibility: visible;
+    }
+  }
+}

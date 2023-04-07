@@ -1,0 +1,116 @@
+[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: rgb(15, 20, 25);
+  opacity: 0.8;
+  cursor: text;
+}
+
+.lAvatar {
+  flex-basis: 48px;
+  margin-right: 12px;
+  margin-top: 5px;
+
+  .avatar {
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 2px inset;
+    width: 48px;
+    height: 48px;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.sBut47378 {
+  .inner_sBut47378 {
+    display: flex;
+    .fp32868bIcon {
+      min-width: 36px;
+      min-height: 36px;
+      border-radius: 100%;
+      background-color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .r_feed_icon {
+        width: 20px;
+        height: 20px;
+        fill: rgb(29, 155, 240);
+      }
+
+      &:hover {
+        background-color: #1d9cf023;
+        border: none;
+        outline: none;
+      }
+      &.fphds39Icon {
+        .r_feed_icon {
+          fill: #536471;
+        }
+        &:hover > .r_feed_icon {
+          fill: rgb(29, 155, 240);
+        }
+      }
+    }
+    &.bottomFp {
+      justify-content: space-between;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      .fpbTom868b {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+
+        span {
+          color: #536471;
+          font-size: 13px;
+        }
+
+        &:hover > span {
+          color: rgb(29, 155, 240);
+        }
+
+        &:hover > .fp32868bIcon {
+          background-color: #1d9cf023;
+          .r_feed_icon {
+            fill: rgb(29, 155, 240);
+          }
+        }
+
+        svg {
+          fill: #536471;
+        }
+        &:nth-child(2) {
+          &:hover > span {
+            color: #029c47;
+          }
+          &:hover > .fp32868bIcon {
+            background-color: #029c472f;
+            .r_feed_icon {
+              fill: #029c47;
+            }
+          }
+        }
+        &:nth-child(3) {
+          &:hover > span {
+            color: #f91880;
+          }
+          &:hover > .fp32868bIcon {
+            background-color: #f918812c;
+            .r_feed_icon {
+              fill: #f91880;
+            }
+          }
+        }
+      }
+    }
+  }
+}

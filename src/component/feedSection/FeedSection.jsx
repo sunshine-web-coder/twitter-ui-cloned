@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import FeedSectionStyle from "./FeedSection.module.scss";
 
 import { FHeader } from "./header/FHeader";
-import Tweet from "./tweek/Tweet";
+import Tweet from "./tweet/Tweet";
 import ShowMoreFeed from "../showMoreFeed/ShowMoreFeed";
 import FeedPost from "../feedPost/FeedPost";
 

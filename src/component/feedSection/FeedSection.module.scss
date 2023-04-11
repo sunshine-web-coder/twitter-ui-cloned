@@ -1,16 +1,26 @@
 .feed_section {
   border: 1px solid rgb(240, 240, 240);
   width: 1220px;
-  min-height: 100vh;
+  height: 2500px;
   padding-left: 270px;
   background-color: #ffffff;
 
   .inner_feed_section {
     width: 100%;
     position: relative;
+  }
 
-    .main_feed {
-      
-    }
+  @media screen and (max-width: 1281px) {
+    padding-left: 90px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+  @media screen and (max-width: 1004px) {
+    max-width: 600px;
+  }
+  @media screen and (max-width: 499px) {
+    max-width: 100%;
+    padding: 0;
   }
 }

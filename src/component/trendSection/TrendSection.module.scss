@@ -1,6 +1,15 @@
-.trend_section{
-    border: 1px solid red;
-    width: 720px;
-    margin-left: 35px;
-    background-color: #ffffff;
+.trend_section {
+  width: 720px;
+  margin-left: 35px;
+  background-color: #ffffff;
+  position: relative;
+
+  .dhdhs8788 {
+    position: sticky;
+    top: 50px;
+  }
+
+  @media screen and (max-width: 1004px) {
+    display: none;
+  }
 }

@@ -2,7 +2,15 @@
   border-right: 1px solid rgb(240, 240, 240);
   width: 270px;
   position: fixed;
+  z-index: 9999;
   background-color: #ffffff;
+
+  @media screen and (max-width: 1281px) {
+    width: 88px;
+  }
+  @media screen and (max-width: 499px) {
+    display: none;
+  }
 
   .inner_sidebar {
     overflow: hidden;
@@ -20,6 +28,12 @@
           padding: 10px;
           fill: #1d9bf0;
         }
+        @media screen and (max-width: 1281px) {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
       .sideMenuLink {
         nav {
@@ -30,6 +44,13 @@
             margin: 0;
             li {
               list-style: none;
+
+              @media screen and (max-width: 1281px) {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
 
               a {
                 display: flex;
@@ -44,6 +65,10 @@
 
                 .menuLabel {
                   padding-right: 30px;
+
+                  @media screen and (max-width: 1281px) {
+                    display: none;
+                  }
                 }
                 svg {
                   width: 1.75rem;
@@ -61,7 +86,8 @@
       .tweetBtn {
         padding-right: 10px;
         margin-top: 15px;
-        button {
+
+        div {
           width: 90%;
           min-height: 52px;
           background-color: rgb(29, 155, 240);
@@ -72,10 +98,41 @@
           outline: none;
           transition-duration: 0.2s;
           border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           &:hover {
             background-color: rgb(25, 141, 218);
             transition-duration: 0.2s;
+          }
+
+          @media screen and (max-width: 1281px) {
+            width: 53px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        svg {
+          width: 24px;
+          height: 24px;
+          fill: #ffffff;
+          display: none;
+        }
+        @media screen and (max-width: 1281px) {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          span {
+            display: none;
+          }
+          svg {
+            display: block;
           }
         }
       }
@@ -130,13 +187,17 @@
                 flex-direction: column;
                 gap: 2px;
 
+                @media screen and (max-width: 1281px) {
+                  display: none;
+                }
+
                 span {
                   padding: 0;
                   color: #0f1419;
-                  font-family: 'Noto Sans Miao', sans-serif;
+                  font-family: "Noto Sans Miao", sans-serif;
                   font-weight: bold;
 
-                  &:nth-child(2){
+                  &:nth-child(2) {
                     color: #536471;
                     font-weight: 400;
                   }
@@ -144,7 +205,10 @@
               }
             }
             .right {
-              .dots{
+              @media screen and (max-width: 1281px) {
+                display: none;
+              }
+              .dots {
                 width: 25px;
               }
             }

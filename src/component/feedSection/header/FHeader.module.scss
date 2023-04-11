@@ -1,68 +1,76 @@
 .FHeader {
-    width: 100%;
-    min-height: 100px;
-    position: sticky;
-    top: -0.5px;
-    z-index: 3;
-    background-color: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgb(240, 240, 240);
+  width: 100%;
+  min-height: 100px;
+  position: sticky;
+  top: -0.5px;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgb(240, 240, 240);
 
-    .fHtop {
+  @media screen and (max-width: 499px) {
+    min-height: 0px;
+  }
+
+  .fHtop {
+    height: 53px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: 20px;
+      color: #0f1419;
+    }
+
+    @media screen and (max-width: 499px) {
+      display: none;
+    }
+  }
+  .fHbottom {
+    display: flex;
+
+    button {
+      width: 100%;
       height: 53px;
+      font-size: 15px;
+      color: #0f1419;
+      background-color: transparent;
+      border-radius: 0px;
+      padding: 0;
+      margin: 0;
       padding-left: 16px;
       padding-right: 16px;
-      display: flex;
-      align-items: center;
+      border: none;
+      outline: none;
 
-      span {
-        font-size: 20px;
-        color: #0f1419;
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.123);
+        transition: 0.2s;
       }
     }
-    .fHbottom {
-      display: flex;
+    .active {
+      position: relative;
+      font-weight: bold;
 
-      button {
-        width: 100%;
-        height: 53px;
-        font-size: 15px;
-        color: #0f1419;
-        background-color: #ffffff;
-        border-radius: 0px;
-        padding: 0;
-        margin: 0;
-        padding-left: 16px;
-        padding-right: 16px;
-        border: none;
-        outline: none;
-
-        &:hover {
-          background-color: rgba(128, 128, 128, 0.185);
-          transition: 0.2s;
-        }
-      }
-      .active {
-        position: relative;
-        font-weight: bold;
-
-        &:after {
-          position: absolute;
-          content: "";
-          height: 5px;
-          bottom: -0px;
-          margin: 0 auto;
-          border-radius: 10px;
-          left: 0;
-          right: 0;
-          width: 23%;
-          background: rgb(29, 155, 240);
-          -o-transition: 0.5s;
-          -ms-transition: 0.5s;
-          -moz-transition: 0.5s;
-          -webkit-transition: 0.5s;
-          transition: 0.5s;
-        }
+      &:after {
+        position: absolute;
+        content: "";
+        height: 5px;
+        bottom: -0px;
+        margin: 0 auto;
+        border-radius: 10px;
+        left: 0;
+        right: 0;
+        width: 23%;
+        background: rgb(29, 155, 240);
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
       }
     }
   }
+}

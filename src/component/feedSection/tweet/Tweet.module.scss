@@ -1,11 +1,14 @@
 .top_feed_container {
   display: flex;
-  // align-items: center;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 8px;
   padding-top: 3px;
   border-bottom: 1px solid rgb(240, 240, 240);
+
+  @media screen and (max-width: 499px) {
+    display: none;
+  }
 
   .lAvatar {
     flex-basis: 48px;
@@ -35,6 +38,10 @@
 
     .s87m88 {
       display: none;
+
+      &.Shows87m88{
+        display: block;
+      }
     }
 
     .s878879 {
@@ -53,6 +60,7 @@
         background-color: #ffffff;
         border: 1px solid rgb(207, 207, 207);
         transition: 0.2s;
+        outline: none;
 
         &:hover {
           background-color: #1d9cf023;
@@ -104,6 +112,7 @@
         background-color: #ffffff;
         border: 1px solid rgb(207, 207, 207);
         transition: 0.2s;
+        outline: none;
 
         &:hover {
           background-color: #1d9cf023;

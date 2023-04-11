@@ -24,6 +24,13 @@
       max-width: 100%;
       object-fit: cover;
     }
+
+    &.mHavatar {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: -3px;
+    }
   }
 }
 .sBut47378 {
@@ -33,7 +40,7 @@
       min-width: 36px;
       min-height: 36px;
       border-radius: 100%;
-      background-color: #ffffff;
+      background-color: transparent;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -44,7 +51,11 @@
         height: 20px;
         fill: rgb(29, 155, 240);
       }
-
+      .r_feed_icon_toggle {
+        width: 20px;
+        height: 20px;
+        transform: rotate(180deg);
+      }
       &:hover {
         background-color: #1d9cf023;
         border: none;
@@ -56,6 +67,33 @@
         }
         &:hover > .r_feed_icon {
           fill: rgb(29, 155, 240);
+        }
+      }
+      &.msY7hicon {
+        .r_feed_icon {
+          fill: rgb(15, 20, 25);
+        }
+        &:hover > .r_feed_icon {
+          fill: rgb(15, 20, 25);
+        }
+        &:hover {
+          background-color: #d1d1d1bd;
+        }
+      }
+      &.fBottomMenuIcon {
+        padding: 8px;
+        min-width: 0px;
+        min-height: 0px;
+        .r_feed_icon {
+          fill: rgb(15, 20, 25);
+          width: 1.75rem;
+          height: 1.75rem;
+        }
+        &:hover > .r_feed_icon {
+          fill: rgb(15, 20, 25);
+        }
+        &:hover {
+          background-color: #d1d1d1bd;
         }
       }
     }
@@ -114,3 +152,4 @@
     }
   }
 }
+

@@ -33,7 +33,7 @@ const FeedPost = () => {
               <div className={FeedPostStyle.tweetText}>
                   <span>{data.post_text}</span>
               </div>
-              <div className={FeedPostStyle.image_video_w82}>
+              <div className={FeedPostStyle.image_video_w82} sty>
                   <img src={data.post_img} alt="" />
               </div>
               <div className={FeedPostStyle.bottom}>

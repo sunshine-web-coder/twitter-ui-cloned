@@ -1,0 +1,23 @@
+.mobile_bottom_menu {
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  border-top: 1px solid rgb(239, 243, 244);
+
+  .inner_mobile_bottom_menu {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

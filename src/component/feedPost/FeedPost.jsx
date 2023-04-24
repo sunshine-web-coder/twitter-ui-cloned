@@ -1,12 +1,11 @@
 import React from "react";
 import FeedPostStyle from "./FeedPost.module.scss";
-import avatar from "../../assets/UNJ05AV8_400x400.jpg";
 import { Link } from "react-router-dom";
 import { FeedPostData } from "../data/FeedPost";
 
-const FeedPost = () => {
+const FeedPost = ({theme}) => {
   return (
-    <>
+    <div className={theme === "light" ? FeedPostStyle.light_theme : FeedPostStyle.dark_theme}>
     {FeedPostData.map((data, i) => (
       <div className={FeedPostStyle.feedPost}>
         <div className={FeedPostStyle.top}>
@@ -66,9 +65,7 @@ const FeedPost = () => {
         <div className={FeedPostStyle.thread_show}></div>
       </div>
     ))}
-      
-    </>
-    
+    </div>
   );
 };
 

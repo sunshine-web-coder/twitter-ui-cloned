@@ -2,11 +2,11 @@ import React from "react";
 import MobileHeaderStyle from "./MobileHeader.module.scss";
 import avatar from "../../assets/UNJ05AV8_400x400.jpg"
 
-export default function MobileHeader() {
+export default function MobileHeader({handleMenuToggleOpen}) {
   return (
     <div className={MobileHeaderStyle.mobile_header}>
       <div className={MobileHeaderStyle.left}>
-        <div className="lAvatar">
+        <div className="lAvatar" onClick={handleMenuToggleOpen}>
             <div className="avatar mHavatar">
                 <img src={avatar} alt="" />
             </div>

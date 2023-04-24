@@ -1,11 +1,14 @@
 import React from 'react'
-import ShowMoreFeedStle from "./ShowMoreFeed.module.scss"
+import ShowMoreFeedStyle from "./ShowMoreFeed.module.scss"
 
-const ShowMoreFeed = () => {
+const ShowMoreFeed = ({theme}) => {
   return (
-    <div className={ShowMoreFeedStle.Show_More_Feed}>
+    <div className={theme === "light" ? ShowMoreFeedStyle.light_theme : ShowMoreFeedStyle.dark_theme}>
+      <div className={ShowMoreFeedStyle.Show_More_Feed}>
         <span>Show 68 Tweets</span>
+      </div>
     </div>
+   
   )
 }
 

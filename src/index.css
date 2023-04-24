@@ -17,6 +17,9 @@ body {
   font-family: 'Anuphan', sans-serif;
   box-sizing: border-box;
 }
+*{
+  box-sizing: border-box;
+}
 
 h1 {
   font-size: 3.2em;
@@ -41,4 +44,3 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-

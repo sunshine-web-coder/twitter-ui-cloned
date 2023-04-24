@@ -1,10 +1,16 @@
-.FHeader {
+.light_theme{
   width: 100%;
   min-height: 100px;
   position: sticky;
   top: -0.5px;
   z-index: 3;
-  background-color: rgba(255, 255, 255, 0.85);
+
+  @media screen and (max-width: 499px) {
+    min-height: 0px;
+  }
+}
+.FHeader {
+  background-color: transparent;
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgb(240, 240, 240);
 
@@ -70,6 +76,52 @@
         -moz-transition: 0.5s;
         -webkit-transition: 0.5s;
         transition: 0.5s;
+      }
+    }
+  }
+}
+
+// FHeader dark mode and light mode styles
+
+.dark_theme {
+  width: 100%;
+  min-height: 100px;
+  position: sticky;
+  top: -0.5px;
+  z-index: 3;
+
+  @media screen and (max-width: 499px) {
+    min-height: 0px;
+  }
+
+  .FHeader {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(80, 80, 80, 0.452);
+
+    @media screen and (max-width: 499px) {
+      min-height: 0px;
+    }
+
+    .fHtop {
+
+      span {
+        font-size: 20px;
+        color: #ffffff;
+      }
+
+    }
+    .fHbottom {
+      display: flex;
+
+      button {
+        color: #ffffff;
+        background-color: transparent;
+
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.123);
+          transition: 0.2s;
+        }
       }
     }
   }

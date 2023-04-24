@@ -80,3 +80,36 @@
     display: none;
   }
 }
+
+
+.dark_theme{
+  .message{
+    background-color: #000000;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px,
+    rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
+
+    .message_title {
+      .left {
+        span {
+          color: #e7e9ea;
+        }
+      }
+      .right {  
+        .exPjjY6 {        
+          .messageBox{
+            .inner_messageBox{
+              .inner_messageBoxSvg{
+                &:hover{
+                  background-color: #141414;
+                }
+                svg{
+                  fill: #e7e9ea;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

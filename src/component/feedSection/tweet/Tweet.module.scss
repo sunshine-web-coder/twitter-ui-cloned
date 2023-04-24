@@ -3,7 +3,7 @@
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 8px;
-  padding-top: 3px;
+  padding-top: 7px;
   border-bottom: 1px solid rgb(240, 240, 240);
 
   @media screen and (max-width: 499px) {
@@ -39,7 +39,7 @@
     .s87m88 {
       display: none;
 
-      &.Shows87m88{
+      &.Shows87m88 {
         display: block;
       }
     }
@@ -57,7 +57,7 @@
         color: #1d9bf0;
         display: flex;
         align-items: center;
-        background-color: #ffffff;
+        background-color: transparent;
         border: 1px solid rgb(207, 207, 207);
         transition: 0.2s;
         outline: none;
@@ -74,16 +74,17 @@
       }
     }
 
-    .top {
+    .textArea_content {
       padding-left: 4px;
+      max-width: 370px;
       .textArea {
         min-width: 55px;
         max-height: 320px;
-        // border: 1px solid red;
+        border: none;
         -moz-appearance: textfield-multiline;
         -webkit-appearance: textarea;
         resize: both;
-        box-shadow: inset 0px 1px 2px #ffffff;
+        // box-shadow: inset 0px 1px 2px #ffffff;
         line-height: 24px;
         font-size: 20px;
         color: rgb(15, 20, 25);
@@ -94,6 +95,13 @@
         overflow: hidden;
         resize: none;
         white-space: pre-wrap;
+
+        &:empty:before {
+          content: attr(placeholder);
+          color: rgb(15, 20, 25);
+          opacity: 0.8;
+          cursor: text;
+        }
       }
     }
     .s878759 {
@@ -109,7 +117,7 @@
         color: #1d9bf0;
         display: flex;
         align-items: center;
-        background-color: #ffffff;
+        background-color: transparent;
         border: 1px solid rgb(207, 207, 207);
         transition: 0.2s;
         outline: none;
@@ -167,6 +175,36 @@
           min-height: 36px;
           font-size: 15px;
           color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// Tweet dark mode styles
+
+.dark_theme {
+  .top_feed_container {
+    border-bottom: 1px solid rgba(80, 80, 80, 0.452);
+
+    .rEditorBox {
+      .s878879 {
+        button {
+          border: 1px solid rgb(116, 116, 116);
+        }
+      }
+      .textArea_content {
+        .textArea {
+          color: #ffffff;
+
+          &:empty:before {
+            color: #5a5a5a;
+          }
+        }
+      }
+      .s878759 {
+        button {
+          border: 1px solid rgb(116, 116, 116);
         }
       }
     }

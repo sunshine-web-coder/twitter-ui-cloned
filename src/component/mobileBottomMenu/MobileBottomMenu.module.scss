@@ -6,6 +6,11 @@
   bottom: 0;
   background-color: #ffffff;
   border-top: 1px solid rgb(239, 243, 244);
+  display: none;
+
+  @media screen and (max-width: 499px) {
+    display: block;
+  }
 
   .inner_mobile_bottom_menu {
     width: 100%;
@@ -18,6 +23,30 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+  }
+}
+
+.dark_theme {
+  .mobile_bottom_menu {
+    background-color: #000000;
+    border-top: 1px solid rgb(22, 22, 22);
+
+    .inner_mobile_bottom_menu {
+      a {
+        .mobileBottomBox {
+          .inner_mobileBottomBox {
+            .inner_mobileBottomBoxSvg {
+              svg {
+                fill: #ffffff;
+              }
+              &:hover {
+                background-color: #1b1b1b;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
